@@ -12,3 +12,7 @@ include distroconfig.txt
 
 [all]
 # Place your custom settings here.
+dtoverlay=disable-bt
+# Run as fast as firmware / board allows
+arm_boost=1
+dtoverlay=i2c-gpio,i2c_gpio_sda=2,i2c_gpio_scl=3,i2c_gpio_delay_us=2,bus=1
